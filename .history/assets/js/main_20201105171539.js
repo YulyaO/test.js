@@ -12,8 +12,8 @@ console.log('Sample JavaScript #2 HW #16');
  */
 var userObj = {
   age: 27,
-  firstName: 'Юля',
-  lastName: 'Олешко',
+  firstName: '>kz',
+  lastName: 'Jktirj',
   fullName() {
     return `${userObj.firstName} ${userObj.lastName}`;
   }
@@ -275,21 +275,9 @@ console.log(oddFn(20)); // [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
 
 function mainFunc(a, b, callback) {
 if (callback && typeof callback === 'function') return callback(a, b);
-return false;
+return 
 };
 
-function cbRandom(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
 
 
-function  cbPow(num, pow) {
-  return Math.pow(num, pow);
-}
-function cbAdd (a, b) {
-  return a + b;
-}
-console.log(mainFunc(2, 5, cbRandom))
-console.log(mainFunc(2, 5, cbPow)); 
-console.log(mainFunc(2, 5, cbAdd)); 
-// console.log(mainFunc(2, 5, 'not a func'));
+console.log(mainFunc);

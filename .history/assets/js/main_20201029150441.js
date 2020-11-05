@@ -12,8 +12,8 @@ console.log('Sample JavaScript #2 HW #16');
  */
 var userObj = {
   age: 27,
-  firstName: 'Юля',
-  lastName: 'Олешко',
+  firstName: '>kz',
+  lastName: 'Jktirj',
   fullName() {
     return `${userObj.firstName} ${userObj.lastName}`;
   }
@@ -31,6 +31,7 @@ var userObj = {
  * userObj.fullName() → 'Имя Фамилия'.
  */
 
+  
 
 /*
  * #3
@@ -95,9 +96,9 @@ function evenFn(n) {
  *
  * В реализации функции обязательно должны быть использованы операторы switch / case / default.
  */
-    function weekFn(day) {
+    function weekFn() {
       let str = ''; 
-switch(day) {
+switch() {
   case 1: str = 'понедельник';
   break;
   case 2: str = 'вторник';
@@ -148,40 +149,39 @@ console.log(weekFn('2')); // null
  * Использование операторов if, switch – запрещено.
  */
 function ageClassification(n) {
-  return n > 0
-    ? n > 24
-   ? n > 44
-   ? n > 65
-   ? n > 75
-   ? n > 90
-    ? n > 122
-   ? null
-    : 'долгожители'
-    : 'старческий возраст'
-    : 'пожилой возраст'
-    : 'средний возраст'
-    : 'молодой возраст'
-    : 'детский возраст'
-    : null;
+  
+  return
+  n > 0 : 'детский возраст'
+  ? n > 24 : 'молодой возраст'
+  ? n > 44 : 'средний возраст'
+  ? n > 65 : 'пожилой возраст'
+  ? n > 75 : 'старческий возраст'
+  ? n > 90 : 'долгожители'
+  ? null : null;
 }
-
-
-
 console.log('-1 :', ageClassification(-1)); // -1 : null
-
 console.log('5 :', ageClassification(5)); // 5 : детский возраст
-
 console.log('34 :', ageClassification(34)); // 34 : молодой возраст
-
 console.log('50 :', ageClassification(50)); // 50 : средний возраст
-
 console.log('65.1 :', ageClassification(65.1)); // 65.1 : пожилой возраст
-
 console.log('80 :', ageClassification(80)); // 80 : старческий возраст
-
 console.log('110 :', ageClassification(110)); // 110 : долгожители
-
 console.log('130 :', ageClassification(130)); // 130 : null
+ // -1 : null
+
+// console.log('5 :', ageClassification(5)); // 5 : детский возраст
+
+// console.log('34 :', ageClassification(34)); // 34 : молодой возраст
+
+// console.log('50 :', ageClassification(50)); // 50 : средний возраст
+
+// console.log('65.1 :', ageClassification(65.1)); // 65.1 : пожилой возраст
+
+// console.log('80 :', ageClassification(80)); // 80 : старческий возраст
+
+// console.log('110 :', ageClassification(110)); // 110 : долгожители
+
+// console.log('130 :', ageClassification(130)); // 130 : null
 
 /*
  * Блок тестирования:
@@ -218,18 +218,12 @@ console.log('130 :', ageClassification(130)); // 130 : null
  * oddFn(15) → [1, 3, 5, 7, 9, 11, 13, 15]
  * oddFn(20) → [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
  */
-function oddFn(n) {
-  let arr = [];
- let i = 0;
-  while (i++ < n) if ( i % 2 !== 0);
 
-  return arr;
-}
-console.log(oddFn(10)); // [1, 3, 5, 7, 9]
+// console.log(oddFn(10)); // [1, 3, 5, 7, 9]
 
-console.log(oddFn(15)); // [1, 3, 5, 7, 9, 11, 13, 15]
+// console.log(oddFn(15)); // [1, 3, 5, 7, 9, 11, 13, 15]
 
-console.log(oddFn(20)); // [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+// console.log(oddFn(20)); // [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
 
 /*
  * #8
@@ -273,23 +267,6 @@ console.log(oddFn(20)); // [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
 // console.log(mainFunc(2, 5, 'not a func')); // false
 
 
-function mainFunc(a, b, callback) {
-if (callback && typeof callback === 'function') return callback(a, b);
-return false;
-};
-
-function cbRandom(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
 
 
-function  cbPow(num, pow) {
-  return Math.pow(num, pow);
-}
-function cbAdd (a, b) {
-  return a + b;
-}
-console.log(mainFunc(2, 5, cbRandom))
-console.log(mainFunc(2, 5, cbPow)); 
-console.log(mainFunc(2, 5, cbAdd)); 
-// console.log(mainFunc(2, 5, 'not a func'));
+

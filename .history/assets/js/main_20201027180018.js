@@ -10,14 +10,10 @@ console.log('Sample JavaScript #2 HW #16');
  * lastName – любая фамилия, строка
  * age – любой возраст, число
  */
-var userObj = {
-  age: 27,
-  firstName: 'Юля',
-  lastName: 'Олешко',
-  fullName() {
-    return `${userObj.firstName} ${userObj.lastName}`;
-  }
-};
+ var userObj 
+ userObj.firstName = Yulya
+ userObj.lastName = Oleshko
+ userObj.age = 27
 
 /*
  * #2
@@ -30,7 +26,6 @@ var userObj = {
  * userObj.lastName ← Фамилия'
  * userObj.fullName() → 'Имя Фамилия'.
  */
-
 
 /*
  * #3
@@ -46,13 +41,9 @@ var userObj = {
  */
 
 /* eslint-disable capitalized-comments */
-function defUpperStr(str) {
-  return (str || 'default text').toUpperCase();
-}
+// console.log(defUpperStr('My text')); // MY TEXT
 
-console.log(defUpperStr('My text')); // MY TEXT
-
-console.log(defUpperStr()); // DEFAULT TEXT
+// console.log(defUpperStr()); // DEFAULT TEXT
 
 /*
  * #4
@@ -70,11 +61,7 @@ console.log(defUpperStr()); // DEFAULT TEXT
  * evenFn(15) → [2, 4, 6, 8, 10, 12, 14]
  * evenFn(20) → [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
  */
-function evenFn(n) {
-  let arr = [];
- for (let i = 1; i <= n; i++) if (i % 2 === 0) arr.push(i);
-  return arr;
-} 
+
 // console.log(evenFn(10)); // [2, 4, 6, 8, 10]
 
 // console.log(evenFn(15)); // [2, 4, 6, 8, 10, 12, 14]
@@ -95,40 +82,18 @@ function evenFn(n) {
  *
  * В реализации функции обязательно должны быть использованы операторы switch / case / default.
  */
-    function weekFn(day) {
-      let str = ''; 
-switch(day) {
-  case 1: str = 'понедельник';
-  break;
-  case 2: str = 'вторник';
-  break;
-  case 3: str = 'среда';
-  break;
-  case 4: str = 'четверг';
-  break;
-  case 5: str = 'пятницa';
-  break;
-  case 6: str = 'суббота';
-  break;
-  case 7: str = 'воскресенье';
-  break;
-  default: str = 'null'
-    
-}
-return str;
-    }
 
-console.log(weekFn(1)); // 'Понедельник'
+// console.log(weekFn(1)); // 'Понедельник'
 
-console.log(weekFn(3)); // 'Среда'
+// console.log(weekFn(3)); // 'Среда'
 
-console.log(weekFn(7)); // 'Воскресенье'
+// console.log(weekFn(7)); // 'Воскресенье'
 
-console.log(weekFn(9)); // null
+// console.log(weekFn(9)); // null
 
-console.log(weekFn(1.5)); // null
+// console.log(weekFn(1.5)); // null
 
-console.log(weekFn('2')); // null
+// console.log(weekFn('2')); // null
 
 /*
  * #6
@@ -147,41 +112,22 @@ console.log(weekFn('2')); // null
  * При выполнении задания допускается использовать только тернарный оператор ?.
  * Использование операторов if, switch – запрещено.
  */
-function ageClassification(n) {
-  return n > 0
-    ? n > 24
-   ? n > 44
-   ? n > 65
-   ? n > 75
-   ? n > 90
-    ? n > 122
-   ? null
-    : 'долгожители'
-    : 'старческий возраст'
-    : 'пожилой возраст'
-    : 'средний возраст'
-    : 'молодой возраст'
-    : 'детский возраст'
-    : null;
-}
 
+// console.log('-1 :', ageClassification(-1)); // -1 : null
 
+// console.log('5 :', ageClassification(5)); // 5 : детский возраст
 
-console.log('-1 :', ageClassification(-1)); // -1 : null
+// console.log('34 :', ageClassification(34)); // 34 : молодой возраст
 
-console.log('5 :', ageClassification(5)); // 5 : детский возраст
+// console.log('50 :', ageClassification(50)); // 50 : средний возраст
 
-console.log('34 :', ageClassification(34)); // 34 : молодой возраст
+// console.log('65.1 :', ageClassification(65.1)); // 65.1 : пожилой возраст
 
-console.log('50 :', ageClassification(50)); // 50 : средний возраст
+// console.log('80 :', ageClassification(80)); // 80 : старческий возраст
 
-console.log('65.1 :', ageClassification(65.1)); // 65.1 : пожилой возраст
+// console.log('110 :', ageClassification(110)); // 110 : долгожители
 
-console.log('80 :', ageClassification(80)); // 80 : старческий возраст
-
-console.log('110 :', ageClassification(110)); // 110 : долгожители
-
-console.log('130 :', ageClassification(130)); // 130 : null
+// console.log('130 :', ageClassification(130)); // 130 : null
 
 /*
  * Блок тестирования:
@@ -218,18 +164,12 @@ console.log('130 :', ageClassification(130)); // 130 : null
  * oddFn(15) → [1, 3, 5, 7, 9, 11, 13, 15]
  * oddFn(20) → [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
  */
-function oddFn(n) {
-  let arr = [];
- let i = 0;
-  while (i++ < n) if ( i % 2 !== 0);
 
-  return arr;
-}
-console.log(oddFn(10)); // [1, 3, 5, 7, 9]
+// console.log(oddFn(10)); // [1, 3, 5, 7, 9]
 
-console.log(oddFn(15)); // [1, 3, 5, 7, 9, 11, 13, 15]
+// console.log(oddFn(15)); // [1, 3, 5, 7, 9, 11, 13, 15]
 
-console.log(oddFn(20)); // [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+// console.log(oddFn(20)); // [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
 
 /*
  * #8
@@ -271,25 +211,3 @@ console.log(oddFn(20)); // [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
 // console.log(mainFunc(2, 5, cbAdd)); // 7
 
 // console.log(mainFunc(2, 5, 'not a func')); // false
-
-
-function mainFunc(a, b, callback) {
-if (callback && typeof callback === 'function') return callback(a, b);
-return false;
-};
-
-function cbRandom(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-
-function  cbPow(num, pow) {
-  return Math.pow(num, pow);
-}
-function cbAdd (a, b) {
-  return a + b;
-}
-console.log(mainFunc(2, 5, cbRandom))
-console.log(mainFunc(2, 5, cbPow)); 
-console.log(mainFunc(2, 5, cbAdd)); 
-// console.log(mainFunc(2, 5, 'not a func'));

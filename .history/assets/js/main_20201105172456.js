@@ -13,7 +13,7 @@ console.log('Sample JavaScript #2 HW #16');
 var userObj = {
   age: 27,
   firstName: 'Юля',
-  lastName: 'Олешко',
+  lastName: 'Ол',
   fullName() {
     return `${userObj.firstName} ${userObj.lastName}`;
   }

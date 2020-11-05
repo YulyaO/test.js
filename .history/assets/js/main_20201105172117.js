@@ -12,8 +12,8 @@ console.log('Sample JavaScript #2 HW #16');
  */
 var userObj = {
   age: 27,
-  firstName: 'Юля',
-  lastName: 'Олешко',
+  firstName: '>kz',
+  lastName: 'Jktirj',
   fullName() {
     return `${userObj.firstName} ${userObj.lastName}`;
   }
@@ -289,7 +289,3 @@ function  cbPow(num, pow) {
 function cbAdd (a, b) {
   return a + b;
 }
-console.log(mainFunc(2, 5, cbRandom))
-console.log(mainFunc(2, 5, cbPow)); 
-console.log(mainFunc(2, 5, cbAdd)); 
-// console.log(mainFunc(2, 5, 'not a func'));
